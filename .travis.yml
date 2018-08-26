@@ -8,5 +8,5 @@ before_script:
 script:
   - npm test
 
-after_srcipt:
+after_script:
   - make test-coveralls

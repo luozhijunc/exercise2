@@ -7,3 +7,6 @@ before_script:
 
 script:
   - npm test
+
+after_srcipt:
+  - make test-coveralls

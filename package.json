@@ -4,8 +4,9 @@
   "description": "test",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
-    "start": "coveralls"
+    "test_cov": "mocha",
+    "start": "coveralls",
+    "test": "mocha --require blanket --reporter mocha-lcov-reporter | ./node_modules/coveralls/bin/coveralls.js"
   },
   "repository": {
     "type": "git",
